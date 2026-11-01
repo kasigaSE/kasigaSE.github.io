@@ -272,7 +272,7 @@ try{var th=localStorage.getItem('dalal-theme');if(th)document.documentElement.se
 function tick(){try{$('clock').textContent='IST '+new Date().toLocaleTimeString('en-GB',{timeZone:'Asia/Kolkata',hour12:false})}catch(e){}}
 tick();setInterval(tick,1000);
 function drawChart(){}
-var API='PASTE_YOUR_WEB_APP_URL_HERE';
+var API='https://script.google.com/macros/s/AKfycbyxv_Q53DtzxhzlAGByQrxrfoYF1lgWHn3JvUSKFRiEv98qBbTT6Cz6OL5vpnnyRoNz1Q/exec';
 var KEY='',UIDN='';
 function poll(){
   fetch(API+'?a=list&key='+encodeURIComponent(KEY)+'&user='+encodeURIComponent(UIDN),{cache:'no-store'}).then(function(r){
